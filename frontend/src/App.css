@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.content {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.filter_block {
+  display: flex;
+  margin: 15px auto;
+  align-items: center;
+  justify-content: center;
+  line-height: 60px;
+  background-color: cornflowerblue;
+  width: 1140px;
+  border-radius: 5px;
+}
+
+.filter > .label, .filter_title {
+  margin: 0 10px 0 30px;
+  color: beige;
+}
+table {
+  margin: 0 auto 20px;
+  width: 1140px;
+}
+tr, th {
+  line-height: 30px;
+}
+tr:nth-child(2n-1) {
+  background-color: lightgray;
+}
+td {
+  text-align: center;
+}
+.paginator {
+  display: flex;
+  justify-content: center;
+}
+.page {
+  margin: 0 30px;
+}

@@ -22,11 +22,16 @@ const Item = ({ item }) => {
 const ItemList = ({ items }) => {
     return (
         <table>
-            <th>Дата</th>
-            <th>Название</th>
-            <th>Количество</th>
-            <th>Расстояние</th>
-            {items.map((item) => <Item item={item} />)}
+            <thead>
+                <th>Дата</th>
+                <th>Название</th>
+                <th>Количество</th>
+                <th>Расстояние</th>
+            </thead>
+            <tbody>
+                {items.map((item) => <Item item={item} />)}
+            </tbody>
+
         </table>
     )
 }

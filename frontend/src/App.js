@@ -57,7 +57,7 @@ class App extends React.Component {
               responce => {
                 const items = responce.data.items;
                 const pages = responce.data.pages;
-                this.setState({ "items": items, "pages": pages });
+                this.setState({ "items": items,"page": 0, "pages": pages });
               }
             ).catch(error => console.log(error));
 

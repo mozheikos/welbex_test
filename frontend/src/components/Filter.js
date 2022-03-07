@@ -10,7 +10,7 @@ const Filter = () => {
                 let gte = document.querySelector('option[name="1"]');
                 let lte = document.querySelector('option[name="2"]');
                 let contains = document.querySelector('option[name="4"]');
-                if (event.target.value == "1") {
+                if (event.target.value == "title") {
                     gte.setAttribute('disabled', "true");
                     lte.setAttribute('disabled', "true");
                     contains.removeAttribute('disabled');
@@ -22,9 +22,9 @@ const Filter = () => {
 
             }}>
                 <option selected value="0">------</option>
-                <option value="1">Название</option>
-                <option value="2">Количество</option>
-                <option value="3">Расстояние</option>
+                <option value="title">Название</option>
+                <option value="quantity">Количество</option>
+                <option value="distance">Расстояние</option>
             </select>
 
             <label className="label" htmlFor="filter_condition">Условие</label>
